@@ -38,6 +38,6 @@ let format = (array, formating, limit) => {
   formatedArr.push("*".repeat(limit + 2)); // top stars
   formatedArr.unshift("*".repeat(limit + 2)); // bottom stars
 
-  return arr
+  return formatedArr
 };
 
