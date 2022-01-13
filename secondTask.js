@@ -1,6 +1,7 @@
 const matrixValidation = (matrix) => {
   const numberArr = [];
 
+  // merge sections into one array
   for (let i = 0; i < matrix[0].length - 2; i++) {
     const filtered = matrix.map((array) =>
       array.filter((_, index) => index >= i && index < i + 3)
@@ -8,6 +9,7 @@ const matrixValidation = (matrix) => {
     numberArr.push(filtered.flat());
   }
 
+  // validate sections
   const result = numberArr.map((arr) =>
     Boolean(
       arr.includes(1) &&
