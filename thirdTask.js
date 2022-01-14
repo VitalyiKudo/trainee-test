@@ -1,4 +1,4 @@
-let format = (array, formating, limit) => {
+const format = (array, formating, limit) => {
   const arr = [];
   let string = "";
 
